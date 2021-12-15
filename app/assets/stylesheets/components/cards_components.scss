@@ -1,6 +1,6 @@
 .small-cards-container {
     flex-shrink: 0;
-    height: 300px;
+    height: 60vh;
     margin-top: 45px;
 }
 
@@ -12,9 +12,9 @@
 
 .small-card {
     border-radius: 10px;
-    border: 0px solid #666;
+    border: 0px solid rgb(255, 255, 255);
     width: 250px;
-    height: 300px;
+    height: 50vh;
     display: flex;
     align-items: flex-end;
     font-family: 'Inter', sans-serif;
@@ -37,18 +37,4 @@
     padding: 0 10px 20px 10px;
     text-align: left;
     line-height: 1.2em;
-    white-space: pre;
-    /* CSS 2.0 */
-    white-space: pre-wrap;
-    /* CSS 2.1 */
-    white-space: pre-line;
-    /* CSS 3.0 */
-    white-space: -pre-wrap;
-    /* Opera 4-6 */
-    white-space: -o-pre-wrap;
-    /* Opera 7 */
-    white-space: -moz-pre-wrap;
-    /* Mozilla */
-    word-wrap: break-word;
-    /* IE 5+ */
 }

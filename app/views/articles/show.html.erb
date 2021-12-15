@@ -1,5 +1,6 @@
 <h1><%= @article.title %></h1>
 
+<div class="container">
 <img src="<%= @article.image_url %>" alt="article-image"/>
 
 <p><%= @article.body %></p>
@@ -18,3 +19,4 @@
 
 <h2>Add a comment:</h2>
 <%= render 'comments/form' %>
+</div>

@@ -1,14 +1,20 @@
-<h1>Articles</h1>
+<h1>Articulos</h1>
+<h3>Tecnología * actualidad * criptomonedas</h3>
 
 Our blog has <%= Article.public_count %> articles and counting!
 
-<ul>
+<div class="big-and-small-card-container d-flex">
   <% @articles.each do |article| %>
-    <li>
-      <%= link_to article.title, article %>
-    </li>
+    <div class="small-cards-container mr-12">
+
+        <div class="small-card" style="background-image: linear-gradient(rgba(0,0,0,0.19), rgba(0,0,0,0.83)), url('<%= article.image_url || "https://picsum.photos/500" %>')">
+          <div class="small-card-title"><%= link_to article.title, article %></div>
+        </div>
+
+
+      </div>
   <% end %>
-</ul>
+</div>
 
 <% if user_signed_in? %>
 <%= link_to "New Article", new_article_path %>

@@ -57,6 +57,3 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'parser', '2.4.0.2'
 gem 'devise'
-group :production do
-  gem 'pg'
-end

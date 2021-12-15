@@ -1,6 +1,7 @@
 .small-cards-container {
     flex-shrink: 0;
-    height: 200px;
+    height: 300px;
+    margin-top: 45px;
 }
 
 .big-and-small-card-container {
@@ -12,8 +13,8 @@
 .small-card {
     border-radius: 10px;
     border: 0px solid #666;
-    width: 174px;
-    height: 150px;
+    width: 250px;
+    height: 300px;
     display: flex;
     align-items: flex-end;
     font-family: 'Inter', sans-serif;

@@ -1,0 +1,12 @@
+:root {
+  --darkgray: #1f2022;
+  --lightgray: #4b4c4e;
+  --brightblue: #2950ff;
+  --white: #fff;
+  --lightred: #f9433dcc;
+}
+
+body{
+  background-color: var(--lightgray);
+  color:var(--white)
+}

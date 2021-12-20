@@ -1,3 +1,33 @@
-img{
+.card-show-article {
+  overflow: hidden;
+  background: white;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.card-show-article > img {
+  height: 400px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card-show-article h1 {
+  font-weight: bold;
   text-align: center;
+}
+
+.card-show-article p {
+  font-size: 12px;
+  opacity: .7;
+  text-align: center;
+  justify-content: center;
+}
+
+
+.card-show-article .card-show-article-content {
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: relative;
+  background-color: var(--darkgray)
 }

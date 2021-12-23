@@ -117,6 +117,7 @@ GEM
     orm_adapter (0.5.0)
     parser (2.4.0.2)
       ast (~> 2.3)
+    particles-js-rails (2.0.0)
     pg (1.2.3)
     public_suffix (4.0.6)
     puma (5.5.2)
@@ -230,6 +231,7 @@ DEPENDENCIES
   jbuilder (~> 2.7)
   listen (~> 3.3)
   parser (= 2.4.0.2)
+  particles-js-rails
   pg (~> 1.1)
   puma (~> 5.0)
   rack-mini-profiler (~> 2.0)

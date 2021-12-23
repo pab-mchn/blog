@@ -1,11 +1,10 @@
-
+<div id="particles-js"></div>
 <div class="banner">
   <div class="container">
     <h1>Articulos</h1>
     <h3>Tecnología * actualidad * criptomonedas</h3>
   </div>
 </div>
-
 
 <div class="big-and-small-card-container d-flex">
   <% @articles.each do |article| %>
@@ -19,6 +18,7 @@
       </div>
   <% end %>
 </div>
+
 
 <% if user_signed_in? %>
 <%= link_to "New Article", new_article_path %>

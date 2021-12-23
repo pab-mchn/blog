@@ -1,15 +1,29 @@
-<div id="particles-js"></div>
 <div class="banner">
   <div class="container">
     <% if request.original_url.split('=').last.include? '/' %>
     <h1>Articulos</h1>
     <h3>Tecnología * actualidad * criptomonedas</h3>
     <% else %>
-    <h1>Articulos <%= request.original_url.split('=').last %> end</h1>
+    <h1><%= request.original_url.split('=').last %> </h1>
+    <% end %>
   </div>
-  <% end %>
 </div>
 
+<div class="banner-categories">
+<div class="container-categories-cards">
+    <% Category.all.each do |category| %>
+    <div class="container-categories-show-cards:first-child">
+    <div class="cat-single-card">
+    <%= link_to category.name, articles_path(category: category.name) %>
+    </div>
+
+
+      </div>
+    <% end %>
+    </div>
+</div>
+
+<div class="banner-articles">
 <div class="big-and-small-card-container d-flex">
   <% @articles.each do |article| %>
     <div class="small-cards-container">
@@ -22,7 +36,7 @@
       </div>
   <% end %>
 </div>
-
+</div>
 
 <% if user_signed_in? %>
 <%= link_to "New Article", new_article_path %>

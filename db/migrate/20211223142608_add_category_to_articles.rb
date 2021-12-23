@@ -1,4 +1,4 @@
-class AddcatogoryToArticles < ActiveRecord::Migration[6.1]
+class AddCategoryToArticles < ActiveRecord::Migration[6.1]
   def change
     add_column :articles, :category_id, :integer
   end

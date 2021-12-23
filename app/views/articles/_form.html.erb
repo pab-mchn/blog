@@ -16,6 +16,12 @@
   </div>
 
   <div>
+    <%= form.label :category_id %><br>
+    <%= form.collection_select :category_id, Category.all, :id, :name %>
+  </div>
+
+
+  <div>
     <%= form.label :body %><br>
     <%= form.rich_text_area :body %>
     <% article.errors.full_messages_for(:body).each do |message| %>

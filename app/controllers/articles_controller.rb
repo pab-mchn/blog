@@ -1,7 +1,12 @@
 class ArticlesController < ApplicationController
 
   def index
-    @articles = Article.all
+    if params[:category].blank?
+      @articles = Article.all
+    else
+      @category_id = Category.find_by(name: params[:category]).id
+      @articles = Articles.where(category_id: @category_id)
+    end
   end
 
   def show
@@ -46,6 +51,6 @@ class ArticlesController < ApplicationController
   private
 
   def article_params
-    params.require(:article).permit(:title, :body, :image_url, :status)
+    params.require(:article).permit(:title, :body, :image_url, :status, :category_id)
   end
 end

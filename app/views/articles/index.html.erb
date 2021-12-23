@@ -1,9 +1,13 @@
 <div id="particles-js"></div>
 <div class="banner">
   <div class="container">
+    <% if request.original_url.split('=').last.include? '/' %>
     <h1>Articulos</h1>
     <h3>Tecnología * actualidad * criptomonedas</h3>
+    <% else %>
+    <h1>Articulos <%= request.original_url.split('=').last %> end</h1>
   </div>
+  <% end %>
 </div>
 
 <div class="big-and-small-card-container d-flex">

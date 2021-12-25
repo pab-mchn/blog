@@ -4,10 +4,11 @@
   <div class="container">
     <% if request.original_url.split('=').last.include? '/' %>
     <h1>Articulos</h1>
-    <%= link_to 'All categories', root_path %>
-    <h3>Tecnología * actualidad * criptomonedas</h3>
+    <p>Este blog busca ser un punto de encuentro entre aquellos que amamos el mundo de la tecnología</p>
+    <%= link_to 'Nuestros articulos', root_path, class: "btn btn-flat" %>
     <% else %>
-    <h1><%= request.original_url.split('=').last.upcase %> </h1>
+    <h1><%= request.original_url.split('=').last %> </h1>
+     <%= link_to 'Nuestros articulos', root_path, class: "btn btn-flat" %>
     <% end %>
   </div>
 </div>

@@ -17,20 +17,35 @@ canvas {
   z-index:99;
   margin-bottom: 20px;
 }
-
+.container{
+  margin-left: 10%;
+}
 .banner h1 {
-  margin: 0;
+  text-align: left;
   color: white;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   font-size: 35px;
   font-weight: bold;
 }
 
-.banner h3 {
-  font-size: 27px;
+.banner p {
+  font-size: 20px;
   color: white;
   opacity: .7;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+}
+
+.btn-flat {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: #ED462F;
+  transition: background 0.3s ease;
+}
+
+.btn-flat:hover {
+  background: #f74129;
+  color: white;
 }
 
 .banner-articles {

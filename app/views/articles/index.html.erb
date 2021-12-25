@@ -1,13 +1,13 @@
 <canvas id="canvas">tu navegador no es compatible! </canvas>
- <%= link_to 'All categories', root_path %>
-<div class="banner">
+
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://images.unsplash.com/photo-1496065187959-7f07b8353c55?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);">
   <div class="container">
     <% if request.original_url.split('=').last.include? '/' %>
-    <h1>Articulos</h1>
-    <p>Este blog busca ser un punto de encuentro entre aquellos que amamos el mundo de la tecnología</p>
+    <h1>Todos los Articulos</h1>
+    <p>Estamos en un lugar para encontrarnos y descubrir sobre lo que nos apasiona, la tecnologia</p>
     <%= link_to 'Nuestros articulos', root_path, class: "btn btn-flat" %>
     <% else %>
-    <h1><%= request.original_url.split('=').last %> </h1>
+    <h1><%= request.original_url.split('=').last.upcase %> </h1>
      <%= link_to 'Nuestros articulos', root_path, class: "btn btn-flat" %>
     <% end %>
   </div>

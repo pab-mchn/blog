@@ -8,20 +8,14 @@ canvas {
 .banner {
   background-size: cover;
   background-position: center;
-  padding: 70px 0;
+  padding: 150px 0;
   background-color: #0E1C0D;
-  margin-left: 10%;
-  margin-right: 10%;
-  border-radius: 30px;
   position:relative;
   z-index:99;
   margin-bottom: 20px;
-}
-.container{
-  margin-left: 10%;
+  text-align: center;
 }
 .banner h1 {
-  text-align: left;
   color: white;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   font-size: 35px;
@@ -37,14 +31,15 @@ canvas {
 
 .btn-flat {
   color: white;
-  padding: 8px 24px;
+  padding: 12px 24px;
   border-radius: 4px;
   background: #ED462F;
   transition: background 0.3s ease;
+  margin-top: 10px;
 }
 
 .btn-flat:hover {
-  background: #f74129;
+  background: #080606;
   color: white;
 }
 
@@ -81,7 +76,7 @@ canvas {
 
 
 .cat-single-card {
-    width: 120px;
+    width: 260px;
     height: 87px;
     display: flex;
     align-items: center;
@@ -92,7 +87,12 @@ canvas {
     background-color: #ED462F
 }
 
+.cat-single-card:hover{
+  background-color: black;
+}
+
 .cat-single-card > a {
     color:var(--white);
-    font-size: 11px;
+    font-size: 13px;
+    text-decoration: none;
 }

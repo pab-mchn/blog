@@ -11,10 +11,11 @@
   </head>
 
   <body>
+    <%= yield %>
+    <%= link_to 'All categories', root_path %>
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
     <%= link_to 'All categories', root_path %>
-    <%= yield %>
 
   </body>
 </html>

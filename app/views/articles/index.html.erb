@@ -1,10 +1,12 @@
+<canvas id="canvas">tu navegador no es compatible! </canvas>
+ <%= link_to 'All categories', root_path %>
 <div class="banner">
   <div class="container">
     <% if request.original_url.split('=').last.include? '/' %>
     <h1>Articulos</h1>
     <h3>Tecnología * actualidad * criptomonedas</h3>
     <% else %>
-    <h1><%= request.original_url.split('=').last %> </h1>
+    <h1><%= request.original_url.split('=').last.upcase %> </h1>
     <% end %>
   </div>
 </div>
@@ -14,7 +16,7 @@
     <% Category.all.each do |category| %>
     <div class="container-categories-show-cards:first-child">
     <div class="cat-single-card">
-    <%= link_to category.name, articles_path(category: category.name) %>
+    <%= link_to category.name.upcase, articles_path(category: category.name) %>
     </div>
 
 
@@ -41,3 +43,4 @@
 <% if user_signed_in? %>
 <%= link_to "New Article", new_article_path %>
 <%end%>
+<%= javascript_pack_tag 'matrix' %>

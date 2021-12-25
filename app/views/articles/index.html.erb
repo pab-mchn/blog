@@ -4,6 +4,7 @@
   <div class="container">
     <% if request.original_url.split('=').last.include? '/' %>
     <h1>Articulos</h1>
+    <%= link_to 'All categories', root_path %>
     <h3>Tecnología * actualidad * criptomonedas</h3>
     <% else %>
     <h1><%= request.original_url.split('=').last.upcase %> </h1>

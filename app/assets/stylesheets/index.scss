@@ -9,7 +9,7 @@ canvas {
   background-size: cover;
   background-position: center;
   padding: 70px 0;
-  background-color: #FCD533;
+  background-color: #0E1C0D;
   margin-left: 10%;
   margin-right: 10%;
   border-radius: 30px;
@@ -47,7 +47,7 @@ canvas {
 .banner-categories {
   background-size: cover;
   background-position: center;
-  padding: 10px 0;
+  padding: 10px 80px;
   margin-left: 10%;
   margin-right: 10%;
   border-radius: 30px;
@@ -66,7 +66,7 @@ canvas {
 
 
 .cat-single-card {
-    width: 200px;
+    width: 120px;
     height: 87px;
     display: flex;
     align-items: center;
@@ -74,9 +74,10 @@ canvas {
     flex-direction: column;
     margin: 0 0 15px 0;
     border-radius: 10px;
-    background-color: var(--lightred)
+    background-color: #ED462F
 }
 
 .cat-single-card > a {
     color:var(--white);
+    font-size: 11px;
 }

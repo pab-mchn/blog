@@ -4,7 +4,7 @@
   <div class="container">
     <% if request.original_url.split('=').last.include? '/' %>
     <h1>Todos los Articulos</h1>
-    <p>Estamos en un lugar para encontrarnos y descubrir sobre lo que nos apasiona, la tecnologia</p>
+    <p>Estamos en un lugar para encontrarnos y descubrir sobre lo que nos apasiona</p>
     <%= link_to 'Nuestros articulos', root_path, class: "btn btn-flat" %>
     <% else %>
     <h1><%= request.original_url.split('=').last.upcase %> </h1>

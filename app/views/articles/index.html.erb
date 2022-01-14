@@ -15,6 +15,7 @@
 
 <div class="banner-categories">
 <div class="container-categories-cards">
+<div class="big-and-small-card-container d-flex">
     <% Category.all.each do |category| %>
     <div class="container-categories-show-cards:first-child">
     <div class="cat-single-card">
@@ -25,22 +26,32 @@
       </div>
     <% end %>
     </div>
+    </div>
 </div>
 
+
 <div class="banner-articles">
-<div class="big-and-small-card-container d-flex">
+  <div class="cards">
   <% @articles.each do |article| %>
-    <div class="small-cards-container">
-
-        <div class="small-card" style="background-image: linear-gradient(rgba(0,0,0,0.19), rgba(0,0,0,0.83)), url('<%= article.image_url || "https://picsum.photos/500" %>')">
-          <div class="small-card-title"><%= link_to article.title, article %></div>
-        </div>
-
-
-      </div>
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('<%= article.image_url || "https://picsum.photos/500" %>')">
+     <div class="cards-title"><%= link_to article.title, article %></div>
+    </div>
   <% end %>
 </div>
 </div>
+
+<!--<div class="banner-articles">
+<div class="big-and-small-card-container d-flex">
+  <% @articles.each do |article| %>
+    <div class="small-cards-container">
+      <div class="small-card" style="background-image: linear-gradient(rgba(0,0,0,0.19), rgba(0,0,0,0.83)), url('<%= article.image_url || "https://picsum.photos/500" %>')">
+        <div class="small-card-title"><%= link_to article.title, article %></div>
+      </div>
+    </div>
+  <% end %>
+</div>
+</div>-->
+
 
 <% if user_signed_in? %>
 <%= link_to "New Article", new_article_path %>

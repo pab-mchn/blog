@@ -58,8 +58,6 @@ canvas {
   background-size: cover;
   background-position: center;
   padding: 10px 80px;
-  margin-left: 10%;
-  margin-right: 10%;
   border-radius: 30px;
   position:relative;
   z-index:99;
@@ -76,15 +74,16 @@ canvas {
 
 
 .cat-single-card {
-    width: 260px;
-    height: 87px;
+    width: 200px;
+    height: 73px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     margin: 0 0 15px 0;
     border-radius: 10px;
-    background-color: #ED462F
+    background-color: #ED462F;
+    margin: 15px;
 }
 
 .cat-single-card:hover{
